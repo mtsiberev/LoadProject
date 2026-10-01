@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  receiver-service:
+    container_name: load_receiver
+    build:
+      context: .
+      dockerfile: LoadSimulator.Receiver/Dockerfile
+      args:
+        - BUILD_CONFIGURATION=Debug
+    ports:
+      - "5001:5001"
+
+  sender-service:
+    container_name: load_sender
+    build:
+      context: .
+      dockerfile: LoadSimulator.Sender/Dockerfile
+      args:
+        - BUILD_CONFIGURATION=Debug
+    depends_on:
+      - receiver-service

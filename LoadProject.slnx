@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Project Path="LoadSimulator.Receiver/LoadSimulator.Receiver.csproj" />
+  <Project Path="LoadSimulator.Sender/LoadSimulator.Sender.csproj" />
+  <Project Path="LoadSimulator.Shared/LoadSimulator.Shared.csproj" />
+</Solution>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LoadSimulator.Sender": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
